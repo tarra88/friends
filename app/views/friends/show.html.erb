@@ -1,0 +1,16 @@
+
+
+<%= render @friend %>
+
+<div>
+  <%= link_to "Edit this Contact", edit_friend_path(@friend), class:"btn btn-primary" %> 
+  <%= link_to "Back to Contacts", friends_path, class:"btn btn-primary" %>
+
+</div>
+
+</br>
+
+  <%= button_to "Delete this Contact", @friend, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+
+ 
